@@ -17,9 +17,9 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 const corsOptions = {
-    origin:'https://job-portal-backend-mauve.vercel.app/',
-    credentials:true
-}
+    origin: ['http://localhost:5173', 'https://job-portal-backend-mauve.vercel.app'],
+    credentials: true
+};
 
 app.use(cors(corsOptions));
 
